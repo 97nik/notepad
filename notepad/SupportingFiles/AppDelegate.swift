@@ -62,7 +62,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     // MARK: - Core Data Saving support
-
+    func applicationWillTerminate(_ application: UIApplication) {
+        StorageManager.shared.saveContext()
+    }
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {

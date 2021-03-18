@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		11FFB0F926032EF800C17D42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FFB0F826032EF800C17D42 /* AppDelegate.swift */; };
 		11FFB0FB26032EF800C17D42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FFB0FA26032EF800C17D42 /* SceneDelegate.swift */; };
-		11FFB0FD26032EF800C17D42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FFB0FC26032EF800C17D42 /* ViewController.swift */; };
 		11FFB10026032EF800C17D42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FFB0FE26032EF800C17D42 /* Main.storyboard */; };
 		11FFB10326032EF800C17D42 /* notepad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11FFB10126032EF800C17D42 /* notepad.xcdatamodeld */; };
 		11FFB10526032EFB00C17D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FFB10426032EFB00C17D42 /* Assets.xcassets */; };
 		11FFB10826032EFB00C17D42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FFB10626032EFB00C17D42 /* LaunchScreen.storyboard */; };
+		11FFB112260344A500C17D42 /* noteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FFB111260344A500C17D42 /* noteTableViewController.swift */; };
+		11FFB1162603477B00C17D42 /* noteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FFB1152603477B00C17D42 /* noteViewController.swift */; };
+		11FFB11C26036DC000C17D42 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FFB11B26036DC000C17D42 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11FFB0F526032EF800C17D42 /* notepad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notepad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FFB0F826032EF800C17D42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11FFB0FA26032EF800C17D42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		11FFB0FC26032EF800C17D42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11FFB0FF26032EF800C17D42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11FFB10226032EF800C17D42 /* notepad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = notepad.xcdatamodel; sourceTree = "<group>"; };
 		11FFB10426032EFB00C17D42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11FFB10726032EFB00C17D42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11FFB10926032EFB00C17D42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11FFB111260344A500C17D42 /* noteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteTableViewController.swift; sourceTree = "<group>"; };
+		11FFB1152603477B00C17D42 /* noteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteViewController.swift; sourceTree = "<group>"; };
+		11FFB11B26036DC000C17D42 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11DA4D072603EEB100C0CCC3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				11FFB0FE26032EF800C17D42 /* Main.storyboard */,
+				11FFB10626032EFB00C17D42 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		11DA4D082603EECA00C0CCC3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				11FFB1152603477B00C17D42 /* noteViewController.swift */,
+				11FFB111260344A500C17D42 /* noteTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		11DA4D0A2603EEE200C0CCC3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				11FFB11B26036DC000C17D42 /* StorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		11DA4D0B2603EEF400C0CCC3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				11FFB10426032EFB00C17D42 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		11DA4D0C2603EF0300C0CCC3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				11FFB0F826032EF800C17D42 /* AppDelegate.swift */,
+				11FFB0FA26032EF800C17D42 /* SceneDelegate.swift */,
+				11FFB10926032EFB00C17D42 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		11DA4D0D2603EF2F00C0CCC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11FFB10126032EF800C17D42 /* notepad.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		11FFB0EC26032EF800C17D42 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +114,12 @@
 		11FFB0F726032EF800C17D42 /* notepad */ = {
 			isa = PBXGroup;
 			children = (
-				11FFB0F826032EF800C17D42 /* AppDelegate.swift */,
-				11FFB0FA26032EF800C17D42 /* SceneDelegate.swift */,
-				11FFB0FC26032EF800C17D42 /* ViewController.swift */,
-				11FFB0FE26032EF800C17D42 /* Main.storyboard */,
-				11FFB10426032EFB00C17D42 /* Assets.xcassets */,
-				11FFB10626032EFB00C17D42 /* LaunchScreen.storyboard */,
-				11FFB10926032EFB00C17D42 /* Info.plist */,
-				11FFB10126032EF800C17D42 /* notepad.xcdatamodeld */,
+				11DA4D0C2603EF0300C0CCC3 /* SupportingFiles */,
+				11DA4D072603EEB100C0CCC3 /* Storyboards */,
+				11DA4D082603EECA00C0CCC3 /* ViewControllers */,
+				11DA4D0A2603EEE200C0CCC3 /* Managers */,
+				11DA4D0B2603EEF400C0CCC3 /* Sources */,
+				11DA4D0D2603EF2F00C0CCC3 /* Model */,
 			);
 			path = notepad;
 			sourceTree = "<group>";
@@ -140,8 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11FFB0FD26032EF800C17D42 /* ViewController.swift in Sources */,
+				11FFB1162603477B00C17D42 /* noteViewController.swift in Sources */,
 				11FFB0F926032EF800C17D42 /* AppDelegate.swift in Sources */,
+				11FFB11C26036DC000C17D42 /* StorageManager.swift in Sources */,
+				11FFB112260344A500C17D42 /* noteTableViewController.swift in Sources */,
 				11FFB0FB26032EF800C17D42 /* SceneDelegate.swift in Sources */,
 				11FFB10326032EF800C17D42 /* notepad.xcdatamodeld in Sources */,
 			);
@@ -292,7 +348,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95ZUNS462R;
-				INFOPLIST_FILE = notepad/Info.plist;
+				INFOPLIST_FILE = notepad/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 95ZUNS462R;
-				INFOPLIST_FILE = notepad/Info.plist;
+				INFOPLIST_FILE = notepad/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
