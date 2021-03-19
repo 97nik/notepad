@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Top 3 Joker quotes</string>
+		<key>text</key>
+		<string>1. Give a man a mask and he will become his true self.
+
+2. This city deserves a better class of criminal. And I am gonna give it to them.
+
+3. Why so serious? Let`s put a smile on that face!</string>
+		<key>image</key>
+		<string>joker.png</string>
+	</dict>
+</array>
+</plist>
